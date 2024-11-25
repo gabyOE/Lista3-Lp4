@@ -1,4 +1,4 @@
-
+//Estudantes: Gabriely O. Eustáquio, Leonardo O. de Paula
 // importação da biblioteca Express
 const express = require('express')
 
@@ -13,6 +13,7 @@ const veiculoRotas = require('./routes/veiculo');
 const hostname = '127.0.0.1';
 const port = 8080;
 
+//rota para o sevidor raiz
 app.get('/', (req, res) => {
   res.send('Esta é a raiz do servidor.')
 })
@@ -20,7 +21,6 @@ app.get('/', (req, res) => {
 // utilizar as rotas
 app.use('/cliente', clienteRotas);
 app.use('/veiculo', veiculoRotas);
-
 
 // rodar a aplicação
 app.listen(port, hostname, console.log('O servidor está rodando'));
