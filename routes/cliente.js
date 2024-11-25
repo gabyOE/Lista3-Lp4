@@ -26,4 +26,4 @@ rotas.delete('/', (req, res) => {
     res.send('Você está na rota delete para cliente.');
 });
 
-module.exports = rotas
+module.exports = rotas;
