@@ -26,4 +26,4 @@ rotas2.delete('/', (req, res) => {
 });
 
 // exportar o código que manipula a rota para veiculo
-module.exports = rotas2
+module.exports = rotas2;
